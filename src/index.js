@@ -5,6 +5,7 @@ import {Provider} from 'react-redux';
 import {AppContainer} from 'react-hot-loader';
 import store from '@/store'
 import * as serviceWorker from './serviceWorker';
+import './style/base.less'
 
 //第一种方式
 const render=Component=>{
@@ -17,7 +18,6 @@ const render=Component=>{
         document.getElementById('root')
     )
 }
-
 
 render(Route)
 serviceWorker.unregister();

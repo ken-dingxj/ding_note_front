@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
+import NormalLoginForm from '@/components/NormalLoginForm/NormalLoginForm'
+import './login.less'
 
 class Login extends Component{
     static propTypes = {
@@ -12,8 +14,11 @@ class Login extends Component{
     }
     render() {
         return(
-            <div>
-                {this.state.msg}
+            <div className="login-container">
+                <div className="login-container-form">
+                    <NormalLoginForm></NormalLoginForm>
+                </div>
+
             </div>
         )
     }
