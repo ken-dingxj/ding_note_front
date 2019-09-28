@@ -1,0 +1,47 @@
+.content{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  .content-notebook{
+    flex-grow:1;
+    .content-notebook-add{
+      height: 60px;
+      padding: 0 5px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      div{
+        flex-grow:1;
+      }
+    }
+    .content-notebook-foot{
+      height: 60px;
+    }
+    div{
+      border: 1px solid red;
+      height: 100%;
+    }
+  }
+  .content-note{
+    flex-grow:1;
+    .content-note-add{
+      height: 60px;
+    }
+    div{
+      border: 1px solid red;
+      height: 100%;
+    }
+  }
+  .content-edite{
+    flex-grow:2;
+    .content-edite-title{
+      height: 80px;
+    }
+  }
+ div{
+   display: flex;
+   flex-direction: column;
+   border: 1px solid red;
+   height: 100%;
+ }
+}

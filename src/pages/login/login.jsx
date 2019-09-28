@@ -1,14 +1,9 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
-import PropTypes from 'prop-types'
 import NormalLoginForm from '@/components/NormalLoginForm/NormalLoginForm'
 import './login.less'
 
-class Login extends Component{
-    static propTypes = {
-
-    }
+class Login extends React.Component{
     state={
         msg:"登陆"
     }
