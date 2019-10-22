@@ -3,32 +3,66 @@
   flex-direction: row;
   height: 100%;
   .content-notebook{
-    flex-grow:1;
+    flex-grow:0.7;
     .content-notebook-add{
       height: 60px;
       padding: 0 5px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      align-items: center;
+      font-size: 18px;
+      color: #ecf0f1;
+      font-family: '微软雅黑';
+      background: #13A89E;
       div{
         flex-grow:1;
       }
     }
     .content-notebook-foot{
       height: 60px;
+      display: flex;
+      flex-direction: row;
+      div:hover{
+        background-color: #13A89E;
+      }
+      div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid #13A89E;
+        border-right: 1px solid #13A89E;
+        background: #72C5BF;
+        cursor: pointer;
+        color: #ECF0F1;
+        font-size: 24px;
+      }
     }
     div{
-      border: 1px solid red;
+      border-right: 1px solid #0E7D76;
       height: 100%;
+      div{
+        flex-grow:1;
+      }
     }
   }
   .content-note{
     flex-grow:1;
+    border-right: 1px solid #13A89E;
     .content-note-add{
-      height: 60px;
+      height:55px;
+      padding: 0 5px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      background: #72c5bf;
+      font-size: 18px;
+      color: #ecf0f1;
+      font-family: '微软雅黑';
     }
     div{
-      border: 1px solid red;
+      //border: 1px solid red;
       height: 100%;
     }
   }
@@ -36,12 +70,23 @@
     flex-grow:2;
     .content-edite-title{
       height: 80px;
+      padding: 0 5px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      color: #13A89E;
+      font-size: 24px;
+      border-bottom: 2px solid #13A89E;
+      button{
+        background-color: #13a89e;
+      }
     }
   }
  div{
    display: flex;
    flex-direction: column;
-   border: 1px solid red;
+   //border: 1px solid red;
    height: 100%;
  }
 }

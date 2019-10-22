@@ -4,6 +4,7 @@ import { Layout } from 'antd';
 import './home.less'
 import HeadMain from '@/components/header/header'
 import ContentMain from '@/components/content/content'
+import Foot from '@/components/footer/footer'
 
 const { Header, Footer, Sider, Content } = Layout;
 
@@ -15,7 +16,7 @@ class HOME extends React.Component{
                 <Layout>
                     <Header ><HeadMain></HeadMain></Header>
                     <Content ><ContentMain></ContentMain></Content>
-                    <Footer></Footer>
+                    <Footer><Foot></Foot></Footer>
                 </Layout>
             </div>
         )
